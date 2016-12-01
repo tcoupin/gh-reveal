@@ -1,0 +1,5 @@
+markdown:    kramdown
+highlighter: rouge
+
+reveal:
+  version:    3.3.0
