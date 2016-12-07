@@ -1,0 +1,44 @@
+---
+---
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/css/reveal.css">
+		<link rel="stylesheet" href="//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			{% include print.js %}
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					{{ page.title }}<br>
+					<small>{{ page.subtitle }}</small>
+				</section>
+				<section data-markdown data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-separator-notes="^Notes:" data-charset="utf-8">
+    				<script type="text/template">
+{{ content }}
+    				</script>
+				</section>
+			</div>
+		</div>
+
+		<script src="//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/lib/js/head.min.js"></script>
+		<script src="//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/js/reveal.js"></script>
+
+		<script>
+			{% include initialisation.js %}
+		</script>
+	</body>
+</html>
+

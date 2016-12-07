@@ -1,0 +1,22 @@
+---
+title: Ma première présentation
+subtitle: coucou
+---
+## slide 1
+Ceci est ma première présentation
+
+S pour voir les notes
+
+Notes:
+Ceci est une note
+
+
+
+## slide 2 : vertical
+Seulement 2 retours à la ligne
+
+
+## Slide 2.1
+
+
+## Slide 2.2

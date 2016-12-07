@@ -1,5 +1,18 @@
-markdown:    kramdown
-highlighter: rouge
-
 reveal:
   version:    3.3.0
+  
+
+markdown:    kramdown
+highlighter: rouge
+collections:
+  presentations:
+    permalink: /:path/
+    output: true
+  slides:
+
+defaults:
+  - scope:
+      path: ""
+      type: presentations
+    values:
+      layout: presentation
