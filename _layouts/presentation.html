@@ -25,11 +25,23 @@
 					{{ page.title }}<br>
 					<small>{{ page.subtitle }}</small>
 				</section>
-				<section data-markdown data-separator="^\n\n\n" data-separator-vertical="^\n\n" data-separator-notes="^Notes:" data-charset="utf-8">
-    				<script type="text/template">
-{{ content }}
-    				</script>
+				{% assign slides = content | split: "§new" %}
+				{% for slide in slides %}
+				<section>
+					{% assign vslides = slide | split: "§break" %}
+					{% for vslide in vslides %}
+						{% assign slidecontent = vslide | split: "§notes" %}
+						<section>
+							{{ slidecontent.first }}
+							{% if slidecontent.last != slidecontent.first %}
+								<aside class="notes">
+									{{ slidecontent.last }}
+								</aside>
+							{% endif %}
+						</section>
+					{% endfor %}
 				</section>
+				{% endfor %}
 			</div>
 		</div>
 
@@ -41,4 +53,5 @@
 		</script>
 	</body>
 </html>
+
 
