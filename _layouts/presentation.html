@@ -8,10 +8,15 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/css/reveal.css">
-		<link rel="stylesheet" href="//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/css/theme/black.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/lib/css/zenburn.css">
+
+		{% if page.theme %}
+			<link rel="stylesheet" href="//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/css/theme/{{ page.theme }}.css">
+		{% else %}		
+			<link rel="stylesheet" href="//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/css/theme/black.css">
+		{% endif %}
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -27,7 +32,7 @@
 				</section>
 				{% assign slides = content | split: "§new" %}
 				{% for slide in slides %}
-				<section>
+					<section>
 					{% assign vslides = slide | split: "§break" %}
 					{% for vslide in vslides %}
 						{% assign slidecontent = vslide | split: "§notes" %}
@@ -40,7 +45,7 @@
 							{% endif %}
 						</section>
 					{% endfor %}
-				</section>
+					</section>
 				{% endfor %}
 			</div>
 		</div>
