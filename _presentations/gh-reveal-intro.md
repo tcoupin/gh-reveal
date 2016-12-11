@@ -153,6 +153,7 @@ Choose your theme in the YAML Front Matter, attribute *theme*.
 - B : break the presentation
 - F : fullscreen
 - ESC : slide overview
+- Ctrl+P : print
 
 §new
 
