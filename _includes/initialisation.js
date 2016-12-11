@@ -6,9 +6,7 @@ Reveal.initialize({
 	{% endfor %}
 	// More info https://github.com/hakimel/reveal.js#dependencies
 	dependencies: [
-		{ src: '../public/js/section-markup.js' },
-		//{ src: '//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/plugin/markdown/marked.js' },
-		//{ src: '//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/plugin/markdown/markdown.js' },
+		{ src: '../public/js/paragraph-markup.js' },
 		{ src: '//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/plugin/notes/notes.js', async: true },
 		{ src: '//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 	]

@@ -75,6 +75,9 @@
 		handleElement(section);
 		//Finaly remove
 		section.innerHTML = section.innerHTML.replace(/§element:[^§]*§;/g,'');
+
+		// Usefull for writing paragraph command on slide
+		section.innerHTML = section.innerHTML.replace(/PARAGRAPH/g,'§');
 		
 	}
 
