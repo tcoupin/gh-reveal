@@ -1,11 +1,10 @@
 # gh-reveal
-In progress... Slides with [Reveal.js](https://github.com/hakimel/reveal.js), Jekyll for github pages
+Slides with [Reveal.js](https://github.com/hakimel/reveal.js) & [Jekyllrb](https://jekyllrb.com) for github pages
+
+Demo at https://tcoupin.github.io/gh-reveal
+
+## Run with docker
 
 ```
 docker run --rm -it --label=jekyll -v $(pwd):/srv/jekyll -p 4000:4000 jekyll/jekyll jekyll serve --watch
 ```
-
-Inspired by
-
-- https://github.com/dploeger/jekyll-revealjs
-- https://github.com/ungoldman/jekyll-reveal

@@ -178,12 +178,13 @@ All the features of [reveal.js](https://github.com/hakimel/reveal.js) (I hope...
 <small>[<i class="fa fa-github" aria-hidden="true"></i> tcoupin/gh-reveal](https://github.com/tcoupin/gh-reveal) [<i class="fa fa-twitter" aria-hidden="true"></i> @thibbojunior](https://twitter.com/thibbojunior) [<i class="fa fa-external-link" aria-hidden="true"></i> tcoupin.github.io](https://tcoupin.github.io)</small>
 
 
+<!-- Hack to display the github ribbon "Fork me" -->
 <script type="text/javascript">
 (function(){
 	var mlink=document.createElement('a');
 	mlink.setAttribute("href","https://github.com/tcoupin/gh-reveal");
-	mlink.setAttribute("style","    position: absolute; top: 0; right: 0; z-index: 1000;");
-	mlink.innerHTML='<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png">';
+	mlink.setAttribute("style","    position: absolute; top: 0; left: 0; z-index: 1000;");
+	mlink.innerHTML='<img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png">';
 	document.body.insertBefore(mlink, document.body.childNodes[0]);
 })();
 </script>

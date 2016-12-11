@@ -6,8 +6,8 @@ Reveal.initialize({
 	{% endfor %}
 	// More info https://github.com/hakimel/reveal.js#dependencies
 	dependencies: [
-		{ src: '../public/js/paragraph-markup.js' },
-		{ src: '../public/js/print-shortcut.js' },
+		{ src: '../plugin/paragraph-markup.js' },
+		{ src: '../plugin/print-shortcut.js' },
 		{ src: '//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/plugin/notes/notes.js', async: true },
 		{ src: '//cdn.rawgit.com/hakimel/reveal.js/{{ site.reveal.version }}/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 	]
