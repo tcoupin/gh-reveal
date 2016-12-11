@@ -13,6 +13,7 @@ initialization:
 ## Yet Another, why ?
 
 Inspired by 
+
 - [<i class="fa fa-2 fa-github" aria-hidden="true"></i> dploeger/jekyll-revealjs](https://github.com/dploeger/jekyll-revealjs)
 - [<i class="fa fa-2 fa-github" aria-hidden="true"></i> ungoldman/jekyll-reveal](https://github.com/ungoldman/jekyll-reveal)
 - and other...
