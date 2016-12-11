@@ -22,6 +22,7 @@ Inspired by
 
 - §fragment:1§; not fully compatible with GitHub Pages
 - §fragment:1§; only for one presentation
+- §fragment:1§; not simple to use reveal.js power
 
 
 §break
