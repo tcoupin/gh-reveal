@@ -13,7 +13,9 @@ layout: default
     <div class="pure-u-1 pure-u-md-3-5" style="padding-top: 50px">
 		<ul>
 		{% for pres in site.presentations %}
-			<li><a href="./{{ pres.url }}">{{ pres.title }} - <small>{{ pres.subtitle }}</small></a></li>
+			{% if pres.draft != true or site.show_drafts == true %}
+			<li><a href="./{{ pres.url }}">{% if pres.draft==true %}[draft]{% endif %}{{ pres.title }} - <small>{{ pres.subtitle }}</small></a></li>
+			{% endif %}
 		{% endfor %}
 		</ul>
     	
