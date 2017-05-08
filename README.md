@@ -6,10 +6,10 @@ Demo at https://tcoupin.github.io/gh-reveal
 ## Run with docker
 
 ```
-docker run --rm -it --label=jekyll -v $(pwd):/srv/jekyll -p 4000:4000 jekyll/jekyll jekyll serve --watch
+docker run --rm -it --label=jekyll -v $(pwd):/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch
 ```
 
 or with drafts
 ```
-docker run --rm -it --label=jekyll -v $(pwd):/srv/jekyll -p 4000:4000 jekyll/jekyll jekyll serve --watch --drafts
+docker run --rm -it --label=jekyll -v $(pwd):/srv/jekyll -p 4000:4000 jekyll/jekyll:pages jekyll serve --watch --drafts
 ```
